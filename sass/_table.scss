@@ -1,5 +1,21 @@
 .table{
     margin: auto;
+    margin-top: 60px;
+    button{
+        border: 3px solid white;
+        border-radius: 50%;
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        background: transparent;
+        margin-bottom: 20px;
+        color: white;
+        cursor: pointer;
+        font-weight: 400;
+        &:active{
+            transform: scale(1.1);
+        }
+    }
     .table__content{
         background: #f1f1f1;
         width: 1000px;
@@ -7,23 +23,17 @@
         border-collapse: collapse;
         font-family: cursive;
         th{
-            background: gray;
+            background: rgb(241, 229, 229);
             text-align: left;
             padding: 10px 10px;
-            border: 2px solid #000;
+            border: 2px solid #00000047;
+            color: #00000085;
             &:hover{
-                color: #ddd;
+                color: #cd17ee;
                 cursor: pointer;
             }
         }
-        td{
-            padding: 10px 10px;
-            border: 2px solid #000;
-            &:hover{
-                color: gray;
-                cursor: pointer;
-            }
-        }
+      
         tr{
             &:nth-child(even){
                 background: #f1f1f1;
